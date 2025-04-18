@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #e91e63;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #f1f1f1;
+}
+
+.task-form, .task-list {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #e91e63;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d81b60;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item {
+  background-color: #2e2e2e;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.task-item h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.task-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.task-item .status {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.status.pending {
+  color: #ff9800;
+}
+
+.status.completed {
+  color: #4caf50;
+}
+
+.status.in-progress {
+  color: #03a9f4;
+}

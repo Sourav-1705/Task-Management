@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMPL Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AMPL Task Manager</h1>
+    </header>
+
+    <div class="task-form">
+      <h2>Create Task</h2>
+      <form id="taskForm">
+        <input type="text" id="taskTitle" placeholder="Task Title" required />
+        <textarea id="taskDetails" placeholder="Task Details" required></textarea>
+        <select id="assignedTo" required>
+          <option value="">Assign to...</option>
+          <option value="Atanu Das">Atanu Das</option>
+          <option value="Pallabi Banka">Pallabi Banka</option>
+          <option value="Jeet Chakraborty">Jeet Chakraborty</option>
+          <option value="Priyanka Sarkar">Priyanka Sarkar</option>
+          <option value="Sindhukona Tewari">Sindhukona Tewari</option>
+        </select>
+        <select id="priority" required>
+          <option value="">Select Priority</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <button type="submit">Assign Task</button>
+      </form>
+    </div>
+
+    <div id="taskList" class="task-list">
+      <h2>Assigned Tasks</h2>
+      <div id="tasks"></div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js"></script>
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
